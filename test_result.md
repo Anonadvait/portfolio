@@ -216,7 +216,6 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Contact form API endpoint"
     - "Contact form with backend integration"
     - "Hero section with personal branding"
     - "Portfolio section with sample projects"
