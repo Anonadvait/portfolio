@@ -107,27 +107,33 @@ user_problem_statement: "Build me a website for my own personal introduction - s
 backend:
   - task: "Contact form API endpoint"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         - working: "NA"
           agent: "main"
           comment: "Implemented POST /api/contact endpoint for contact form submissions with MongoDB storage"
+        - working: true
+          agent: "testing"
+          comment: "Successfully tested POST /api/contact endpoint. The API correctly accepts name, email, subject, and message fields, stores them in MongoDB, and returns the created object with an ID and timestamp."
   
   - task: "Get contact messages API endpoint"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         - working: "NA"
           agent: "main"
           comment: "Implemented GET /api/contact endpoint to retrieve contact messages"
+        - working: true
+          agent: "testing"
+          comment: "Successfully tested GET /api/contact endpoint. The API correctly retrieves contact messages from MongoDB and returns them in the expected format."
 
 frontend:
   - task: "Hero section with personal branding"
