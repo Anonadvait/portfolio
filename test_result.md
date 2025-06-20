@@ -233,10 +233,7 @@ metadata:
   run_ui: false
 
 test_plan:
-  current_focus:
-    - "Contact form with backend integration"
-    - "Hero section with personal branding"
-    - "Portfolio section with sample projects"
+  current_focus: []
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
